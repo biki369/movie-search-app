@@ -72,3 +72,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+
+
+// npx react-native run-ios
