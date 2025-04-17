@@ -74,4 +74,5 @@ const styles = StyleSheet.create({
 });
 
 
-// npx react-native run-ios
+// npx react-native run-ios 
+// just  
