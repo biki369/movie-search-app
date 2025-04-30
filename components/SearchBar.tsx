@@ -3,12 +3,10 @@ import React from "react";
 import { icons } from "@/constants/icons";
 import { useRouter } from "expo-router";
 
-
 interface Props {
     onPress?: () => void;
     placeholder: string;
 }
-
 
 const SearchBar = (props) => {
   const router = useRouter();
@@ -35,3 +33,5 @@ const SearchBar = (props) => {
 };
 
 export default SearchBar;
+
+////
