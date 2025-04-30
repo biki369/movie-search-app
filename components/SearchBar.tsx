@@ -31,7 +31,8 @@ const SearchBar = (props) => {
     </View>
   );
 };
-
 export default SearchBar;
 
-////
+
+
+
