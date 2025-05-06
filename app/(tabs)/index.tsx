@@ -4,7 +4,7 @@ import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
 import useFetch from "@/services/useFetch";
 import { useRouter } from "expo-router";
-import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from "react-native";
+import { ActivityIndicator, FlatList, Image, SafeAreaView, ScrollView, Text, View } from "react-native";
 
 export default function Index() {
   const router = useRouter();
@@ -18,12 +18,13 @@ export default function Index() {
   return (
     <View className="flex-1 bg-primary">
       <Image source={images.bg} className="absolute w-full z-0" />
-      <Image source={icons.logo} className="w-12 h10 mt-20 mb-5 mx-auto " />
+  
       <ScrollView
         className="flex-1 px-5"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 10, minHeight: "100%" }}
       >
+     <Image source={icons.logo} className="w-12 h10 mt-20 mb-5 mx-auto " />
         {moviesLoading ? (
           <ActivityIndicator
             color="#ab8bff"
@@ -42,9 +43,9 @@ export default function Index() {
             />
             <>
               <Text className="text-white text-2xl font-semibold mb-3 mt-5">
-                Latest Movies
+                Latest Movies..
               </Text>
-
+              
               <FlatList
                 data={movies}
                 keyExtractor={(item) => item.id.toString()}
@@ -55,6 +56,7 @@ export default function Index() {
                 )}  
               
               />
+
             </>
           </View>
         )}
