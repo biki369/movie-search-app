@@ -54,9 +54,7 @@ export default function Index() {
                     <Text className="text-white text-base">{item.title}</Text>
                   </View>
                 )}  
-              
               />
-
             </>
           </View>
         )}
