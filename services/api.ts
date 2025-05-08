@@ -5,7 +5,7 @@ export const TMDB_CONFIG = {
   herders: {
     accept: "application/json",
     // Authorization: `Bearer ${process.env.EXPO_PUBLIC_API_KEY}`,
-    Authorization: `Bearer ${"10e97ca62b6ef3ba79edc60087c363ad"}`,
+    Authorization: `Bearer 10e97ca62b6ef3ba79edc60087c363ad`,
   },
 };
 
@@ -24,6 +24,8 @@ export const fetchMovies = async ({ query }: { query: string }) => {
   const data = await response.json();
   return data.results;
 };
+
+
 
 
 //
