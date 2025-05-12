@@ -1,11 +1,11 @@
 export const TMDB_CONFIG = {
   BASE_URL: "https://api.themoviedb.org/3",
-  // API_KEY: process.env.EXPO_PUBLIC_API_KEY,
-  API_KEY: "10e97ca62b6ef3ba79edc60087c363ad",
+  API_KEY: process.env.EXPO_PUBLIC_API_KEY,
+  // API_KEY: "10e97ca62b6ef3ba79edc60087c363ad",
   herders: {
     accept: "application/json",
-    // Authorization: `Bearer ${process.env.EXPO_PUBLIC_API_KEY}`,
-    Authorization: `Bearer 10e97ca62b6ef3ba79edc60087c363ad`,
+    Authorization: `Bearer${process.env.EXPO_PUBLIC_API_KEY}`,
+    // Authorization: `Bearer 10e97ca62b6ef3ba79edc60087c363ad`,
   },
 };
 
